@@ -1,0 +1,68 @@
+@import "../../assets/scss/variables.scss";
+.Privacy-Securiwiser {
+  max-width: 1440px;
+  margin: auto;
+  padding: 57px 20px;
+  @media (max-width: 992px)  {
+    padding: 118px 150px;
+  }
+  h2,
+  h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 32px;
+    letter-spacing: 1.19034px;
+    color: $text-color-2;
+    margin-bottom: 85px;
+    @media (max-width: 768px) {
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: 1.0672px;
+      margin-bottom: 34px;
+    }
+  }
+  .Content {
+    width: 100%;
+  }
+  p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.574647px;
+    color: $text-color-2;
+    margin-bottom: 25px;
+    a {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.574647px;
+      text-decoration: none;
+
+      //   color: rgb(40, 157, 253);
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 25px;
+      letter-spacing: 0.574647px;
+    }
+    span {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      color: $text-color-2;
+    }
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: $text-color-2;
+  }
+  .List {
+    margin-bottom: 0;
+  }
+}

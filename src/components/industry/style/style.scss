@@ -1,0 +1,53 @@
+@import "../../../assets/scss/variables.scss";
+
+
+.industry-video {
+  margin: 100px auto 100px;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+.whysecuri-video {
+  margin: 0 auto 100px;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+
+// blog card
+.news-container {
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 992px)  {
+    flex-direction: row;
+  }
+  .post-cards {
+    margin: 0;
+    .post-card {
+      margin: 20px;
+    }
+  }
+
+  .main-sub-card {
+    margin: 25px 18px 0 18px;
+    @media (max-width: 992px)  {
+      margin: 0 18px;
+      height: 517.891px;
+      max-height: 545px;
+    }
+  }
+}
+  .read-more {
+    display: none;
+    @media (max-width: 768px)  {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+}

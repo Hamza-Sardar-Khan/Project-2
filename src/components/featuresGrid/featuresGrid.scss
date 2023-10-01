@@ -1,0 +1,125 @@
+@import "../../assets/scss/variables.scss";
+
+.feature-cards-container {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 0 20px;
+  @media (max-width: 768px)  {
+    //margin-top: -200px;
+    padding: 0 62px;
+  }
+  .feature-cards-content {
+    margin-top: 37px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    @media (max-width: 768px)  {
+      padding-top: 37px;
+    }
+    .animated {
+      display: flex;
+      .feature-card1 {
+        margin-bottom: 30px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .feature-img {
+          height: 30px;
+          width: 30px;
+        }
+        div {
+          margin-left: 16px;
+          .feature-card-heading {
+            font-weight: 500;
+            font-size: 14px;
+          }
+          .feature-card-para {
+            font-size: 12px;
+            margin-top: 10px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px)  {
+      .animated {
+        flex: 0 1 45%;
+        justify-content: center;
+        .feature-card1 {
+          margin-bottom: 60px;
+          .feature-img {
+            height: 74px;
+            width: 74px;
+          }
+          div {
+            margin-left: 16px;
+            .feature-card-heading {
+              font-weight: 700;
+              font-size: 16px;
+            }
+            .feature-card-para {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1200px)  {
+      .animated {
+        display: flex;
+        flex: 0 1 28%;
+      }
+    }
+  }
+}
+.in-pricing {
+  @media (max-width: 768px)  {
+    margin-top: -200px;
+  }
+}
+
+.about-feature-cards-container {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .section-heading {
+    .sw-heading-1 {
+      text-align: center !important;
+    }
+  }
+
+  @media (max-width: 768px)  {
+    padding: 0 62px;
+  }
+}
+
+.about-feature-cards-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+
+    .feature-card-heading {
+      margin-bottom: 1rem;
+    }
+    .feature-card-para {
+      color: $text-color-2;
+      line-height: 24px;
+    }
+  }
+}

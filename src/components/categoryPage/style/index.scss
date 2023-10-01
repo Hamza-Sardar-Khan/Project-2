@@ -1,0 +1,53 @@
+@import "../../../assets/scss/variables.scss";
+
+// hero-banner
+.hero-banner {
+  width: 100%;
+  min-height: 287px;
+
+  .banner-about {
+    max-width: 1440px;
+    margin: auto;
+    padding: 41px 20px 35px;
+    text-align: left;
+    @media (max-width: 768px)  {
+      text-align: center;
+    }
+    @media (max-width: 992px)  {
+      padding: 83px 150px 61px;
+    }
+
+    .banner-heading {
+      margin-bottom: 57px;
+      @media (max-width: 768px)  {
+        margin-bottom: 37px;
+      }
+    }
+  }
+}
+
+// all-cards
+
+.all-cards {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 40px 0 50px 0;
+  @media (max-width: 1200px)  {
+    padding: 80px 0 100px 0;
+  }
+  .post-cards {
+    max-height: unset;
+    margin: 0 auto;
+  }
+  .padination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .show-results {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

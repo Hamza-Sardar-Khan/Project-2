@@ -1,0 +1,437 @@
+// Tabs Section
+@import "../../../assets/scss/variables.scss";
+
+.tabs-section {
+  .posts-featured {
+    padding-bottom: 40px;
+    .post-cards {
+      max-height: unset;
+    }
+  }
+
+  padding-bottom: 50px;
+  @media (min-width: 992px)  {
+    padding-bottom: 66px;
+  }
+
+  .blog-tabs {
+    max-width: 1400px;
+    margin: auto;
+    padding: 31px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: 992px)  {
+      flex-direction: row;
+      padding: 50.49px 62px;
+    }
+
+    // mobile search
+    .search-space {
+      width: 100%;
+      padding: 23px 20px 0;
+      display: block;
+      margin-bottom: 13px;
+      @media (min-width: 1200px)  {
+        padding: 0;
+        display: none;
+      }
+      .mobile-search {
+        position: relative;
+        width: 100%;
+
+        input {
+          width: 100%;
+          padding: 5px 14.3px;
+          color: $text-color-2;
+          border: 1px solid $text-color-2;
+          box-sizing: border-box;
+          border-radius: 4px;
+          outline: none;
+        }
+        ::placeholder {
+          color: $text-color-2;
+          opacity: 1; /* Firefox */
+        }
+
+        img {
+          position: absolute;
+          top: 7.82px;
+          right: 15.34px;
+          width: 19.64px;
+        }
+      }
+    }
+    // mobile tabs
+    .mobile-tabs {
+      width: 100%;
+      height: 29px;
+      padding: 0 20px;
+      display: block;
+      @media (min-width: 1200px)  {
+        display: none !important;
+      }
+      #dropdown-basic {
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+      form {
+        select {
+          width: 100%;
+          height: 100%;
+          padding: 5px 14.3px;
+          color: $text-color-2;
+          border: 1px solid $text-color-2;
+          box-sizing: border-box;
+          border-radius: 4px;
+          background: $text-color-1;
+        }
+      }
+    }
+
+    // desxtop tabs
+    .allcatlist {
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      display: none !important;
+      @media (min-width: 1200px)  {
+        display: block;
+        display: flex !important;
+      }
+      .tabs-name {
+        color: $text-color-2;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.451508px;
+        padding-right: 40px;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          color: $text-color-3;
+          font-weight: 600;
+        }
+        &:active {
+          color: $text-color-3 !important;
+          font-weight: 600;
+        }
+        &:focus {
+          color: $text-color-3 !important;
+          font-weight: 600;
+        }
+      }
+      .is-active {
+        color: $text-color-3;
+        font-weight: 600;
+      }
+    }
+    // desktop search
+    .desktop-search {
+      margin-right: 14px;
+      display: none;
+      @media (min-width: 1200px)  {
+        display: block;
+      }
+      input {
+        width: 100%;
+        height: 29px;
+        padding: 14.3px;
+        color: $text-color-2;
+        border: 1px solid $text-color-2;
+        box-sizing: border-box;
+        border-radius: 4px;
+        outline: none;
+        @media (min-width: 1200px)  {
+          width: 270px;
+          min-width: 270px;
+          height: 39.28px;
+        }
+      }
+      ::placeholder {
+        color: $text-color-2;
+        opacity: 1; /* Firefox */
+      }
+      .img-search {
+        margin-left: -35px;
+        width: 19.64px;
+      }
+    }
+  }
+  .cyber-card {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px 50px;
+    @media (min-width: 992px)  {
+      padding: 0 62px 99px;
+    }
+  }
+}
+
+// Card Carousel
+
+.blog-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px 5px;
+
+  @media (min-width: 992px)  {
+    padding: 0 150px 0;
+  }
+  .view-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 38px 0 31px;
+    color: $text-color-2;
+    @media (min-width: 992px)  {
+      margin: 71.34px 0 48.26px;
+    }
+
+    .min-heading {
+      color: $text-color-2;
+    }
+
+    .view-more {
+      width: 100px;
+      padding: 10px;
+      border: 1px solid $text-color-2;
+      border-radius: 40px;
+      cursor: pointer;
+      color: $text-color-2;
+
+      &:hover {
+        color: $text-color-1;
+        background: $text-color-2;
+      }
+    }
+  }
+
+  .blog-cards {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px)  {
+      flex-direction: row;
+      display: inherit;
+    }
+
+    .blog-card1 {
+      max-width: 348px;
+      .category-img {
+        width: 100%;
+        height: 175.13px;
+      }
+      .blog-description {
+        .blog-btn {
+          min-width: 157.08px;
+          min-height: 29.45px;
+          padding: 0 10px;
+          box-sizing: border-box;
+          border-radius: 10.5px;
+          margin: 23px 0 24px;
+        }
+        .blog-para {
+          color: $text-color-2;
+          margin-bottom: 11px;
+          line-height: 26px;
+        }
+        .blog-para2 {
+          color: $text-color-2;
+        }
+      }
+    }
+  }
+}
+.cards {
+  max-width: 1440px;
+  margin: auto;
+  padding: 47px 0px;
+
+  @media (min-width: 992px)  {
+    padding: 0 150px 95px;
+  }
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px)  {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+// get started
+.get-started {
+  width: 100%;
+  background: $text-color-2;
+
+  .main-about {
+    max-width: 1440px;
+    margin: auto;
+    padding: 37px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: 992px)  {
+      flex-direction: row;
+      padding: 56.11px 265px;
+    }
+
+    .main-heading {
+      color: $text-color-1;
+      margin-bottom: 25px;
+      @media (min-width: 992px)  {
+        margin-bottom: 0;
+      }
+    }
+    .get-btn {
+      width: 100%;
+      min-height: 39.28px;    
+       @media (max-width: 768px) {
+        width: 234.21px;
+      }
+    }
+  }
+}
+
+// Cybersecrity
+
+.cybersecrity-section {
+  max-width: 1400px;
+  margin: auto;
+  padding: 45px 0;
+  @media (min-width: 992px)  {
+    padding: 61.34px 0 10px 0;
+  }
+  .read-more {
+    margin-top: 0;
+  }
+
+  .category-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48.26px;
+    padding: 0 20px;
+    flex-direction: column;
+    h6 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .read-more {
+      text-align: center;
+    }
+    @media (min-width: 992px)  {
+      h6 {
+        margin-bottom: 0;
+        text-align: left;
+      }
+      .read-more {
+        text-align: left;
+      }
+      padding: 0 62px;
+      flex-direction: row;
+    }
+  }
+
+  .cy-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .post-cards {
+      max-height: unset;
+      margin: 0;
+    }
+    .cy-popular {
+      margin: auto;
+      flex: 0 0 291px; 
+      @media (max-width: 393px) {
+      flex: 0 0 403px; 
+      max-width: 403px;
+      }
+    }
+    .related-posts-card {
+      margin: 20px;
+    }
+  }
+
+  .cy-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .cy-popular {
+      margin: 38px 0 0 0;
+      @media (min-width: 992px)  {
+        margin: 0 0 0 52.2px;
+      }
+      .pop-main-heding {
+        color: $text-color-2;
+        padding-bottom: 4px;
+      }
+      .pop-abouts {
+        margin-top: 8px;
+        .pop-most-text-1 {
+          color: $text-color-2;
+          line-height: inherit;
+          width: 100%;
+          margin-top: 20px;
+
+          @media (max-width: 768px)  {
+            width: 350px;
+          }
+        }
+        .pop-sub-heading {
+          color: $text-color-2;
+          span {
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// data-breaches
+.data-breaches-section {
+  max-width: 1440px;
+  margin: auto;
+  padding: 45px 20px 0;
+  @media (min-width: 992px)  {
+    padding: 71.34px 150px 61.48px;
+  }
+
+  .min-heading {
+    margin-bottom: 48.26px;
+    color: $text-color-2;
+  }
+  .data-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: 992px)  {
+      flex-direction: row;
+    }
+  }
+}
+
+

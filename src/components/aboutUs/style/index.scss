@@ -1,0 +1,135 @@
+@import "../../../assets//scss/variables.scss";
+
+.about-hero {
+  
+  background-color: $text-color-2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 475px;
+ @media (max-width: 768px)  {
+    height: 631px;
+    padding: 0 60px;
+  }
+  .about-hero-content {
+    color: white;
+    text-align: center;
+    h1 {
+      font-weight: 400;
+      margin: 30px 0;
+    }
+    p {
+      font-weight: 300;
+      padding: 0;
+      margin: 30px auto;
+     @media (max-width: 768px)  {
+        max-width: 935px;
+      }
+    }
+  }
+}
+
+.about-section {
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 20px;
+
+  p {
+    font-weight: 300;
+    letter-spacing: 0.57px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  div.about-text {
+    p {
+      margin-bottom: 40px;
+    }
+  }
+  div.about-media {
+    margin: 30px 0;
+    .read-more {
+      margin-bottom: 40px;
+    }
+  }
+ @media (max-width: 768px)  {
+    padding: 80px 62px;
+    .animated > .sw-heading-1 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    div.about-text {
+      margin-bottom: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      p {
+        flex: 0 0 50%;
+        max-width: 539px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        p {
+          max-width: 539px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.about-media-wrapper {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: $text-color-2;
+ @media (max-width: 768px)  {
+    padding: 80px 62px;
+  }
+
+  .sw-heading-1 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+.about-media {
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $text-color-2;
+  color: white;
+
+ @media (max-width: 768px)  {
+    padding: 80px 62px;
+  }
+
+  > div {
+    flex: 0 0 48%;
+  }
+  > div:first-of-type {
+    flex: 0 0 42%;
+    p {
+      padding-right: 30px;
+      margin-top: 20px;
+    }
+  }
+  .read-more {
+    margin-bottom: 0;
+  }
+}

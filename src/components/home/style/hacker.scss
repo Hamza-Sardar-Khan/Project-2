@@ -1,0 +1,197 @@
+@import "../../../assets/scss/variables.scss";
+
+//  Cybercrime section
+
+.cybercrime-section {
+  width: 100%;
+  background: $text-color-2;
+
+  .cybercrime {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: left;
+    color: white;
+    align-items: center;
+    div {
+      padding: 40px 20px 40px 30px;
+    }
+    h3 {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 18px;
+      span {
+        font-weight: 600;
+        color: $color-2;
+      }
+    }
+    p {
+      font-size: 9px;
+      font-weight: 300;
+    }
+    img:first-of-type, img:last-of-type {
+      display: none;
+    }
+    @media (max-width: 768px)  {
+      div {
+        padding: 0;
+      }
+      //max-height: 258px;
+      text-align: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 22px;
+
+      }
+      p {   
+        font-size: 13px;
+      }
+      img:first-of-type, img:last-of-type {
+        display: block;
+      }
+      img:nth-of-type(2) {
+        display: none;
+      }
+    }
+    @media (max-width: 1200px)  {
+      max-height: 258px;
+    }
+  }
+}
+
+// Testimonials section
+
+.testimonials-container {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  a {
+    margin-top: 35px;
+    display: block;
+    font-size: 15px;
+    color: $text-color-3;
+    img {
+      margin-left: 6px;
+      width: 15px;
+      height: 14px;
+    }
+  }
+  .testimonials {
+    max-height: 285px;
+    padding-top: 1px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    color: $text-color-2;
+    div {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 284px; 
+      align-items: center;
+      justify-content: center;
+      border: 0.5px solid $text-color-8;
+      border-radius: 8px;
+      padding: 30px 10px 10px 17px;
+      margin: 16px 0px;
+      font-size: 13px;
+      line-height: 18px;
+      position: relative;
+      overflow: visible;
+      font-weight: 300;
+      letter-spacing: 1px;
+      img {
+        width: 38px;
+        height: 39px;
+        overflow: visible;
+        position: absolute;
+        top: -16px;
+        left: 13px;
+      }
+      p {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+      }
+      span {
+        width: 100%;
+        text-align: right;
+        line-height: 18px;
+        color: $text-color-2;
+        padding-right: 4px;
+      }
+      span:first-of-type {
+        color: $text-color-2;
+        margin-top: 6px;
+      }
+      p:first-of-type {
+        min-height: 40px;
+      }
+      p:first-of-type, span:first-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+  .trust {
+    margin-top: 20px;
+    img {
+      width: 224px;
+      height: auto;
+    }
+    p {
+      font-size: 9px;
+      font-weight: 600;
+      padding-top: 10px;
+    }
+  }
+  @media (max-width: 393px)  {
+    .testimonials {
+      max-height: 306px;
+      padding-top: 6px;
+      div {
+        flex: 0 0 397px;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 40px 10px 10px 20px;
+        margin: 16px 12px;
+        img {
+          width: 53px;
+          height: 53px;
+          top: -22px;
+          left: 17px;
+        }
+        p {
+          width: 100%;
+          text-align: left;
+          margin-bottom: 4px;
+        }
+        p:first-of-type {
+          min-height: 50px;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px)  {
+    .trust {
+      margin-top: 35px;
+      img {
+        width: 322px;
+      }
+      p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: -8px;
+        padding: 0 14px;
+        padding-top: 0;
+      }
+    }
+  }
+}
+

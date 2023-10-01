@@ -1,0 +1,71 @@
+@import "../../../assets/scss/variables.scss";
+
+  .blog-categories-card {
+    letter-spacing: 0.41px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 0 0 291px; 
+    margin: 0 20px 25px 20px;
+    border: 0.3px solid $text-color-13;
+    border-radius: 6px;
+    max-height: 530;
+    a {
+      color: $text-color-2;
+    }
+    .card-info {
+      padding: 20px 30px;
+      display: flex;
+      border-bottom: 0.3px solid $text-color-13;
+      width: 100%;
+      .card-info-mid {
+        h3 {
+          margin: 0;
+          font-size: 13px;
+          color: $text-color-2;
+          font-weight: 600;
+          letter-spacing: 0.1%;
+        }
+      }
+    }
+    .card-info-bottom {
+      padding: 30px;
+      width: 100%;
+      h4 {
+        color: $text-color-3;
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        span {
+          font-weight: 600;
+          margin-left: 8px;
+        }
+      } 
+    }
+  }
+
+  @media (max-width: 393px)  {
+    .blog-categories-card {
+      align-items: initial;
+      flex: 0 0 403px; 
+      max-width: 403px;
+      max-height: 517px;
+      .card-info  {
+        padding: 20px 40px;
+        .card-info-mid {
+          h3 {
+            font-size: 18px;
+            letter-spacing: 1.07px;
+            line-height: 26px;
+          }
+        }
+      }
+      .card-info-bottom {
+        padding: 40px;
+        h4 {
+          font-size: 15px;
+        } 
+      }
+    }
+  }

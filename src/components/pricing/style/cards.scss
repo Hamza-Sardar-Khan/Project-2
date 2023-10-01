@@ -1,0 +1,179 @@
+@import "../../../assets/scss/variables.scss";
+
+.price_card_section {
+  justify-content: center;
+  bottom: 320px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 16px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    position: unset;
+  }
+
+  .basic_card {
+    background: #ffffff;
+    padding: 26px 28px 15px 28px;
+    border-radius: 9px;
+    border: 0.5px solid $text-color-8;
+    text-align: left;
+    h1 {
+      font-weight: 600;
+      font-size: 27px;
+    }
+    h3 {
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.67px;
+      color: #37384f;
+    }
+    h4.free {
+      font-size: 45px;
+      margin-top: 26px;
+    }
+    h4 {
+      justify-content: flex-start;
+      margin-top: 20px;
+      font-weight: 600;
+      letter-spacing: 2.4px;
+      font-size: 60px;
+      display: flex;
+      sup {
+        align-self: center;
+        font-size: 18px;
+        color: #37384f;
+      }
+      span {
+        align-self: center;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: $text-color-8;
+        margin: 0 -52.1px 0 9px;
+        letter-spacing: normal;
+      }
+    }
+    p {
+      display: block;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    p.plus {
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 30px;
+    }
+    hr {
+      margin-bottom: 0;
+      margin-top: 20px;
+      color: $text-color-8;
+    }
+    button {
+      margin-top: 30px;
+      background: linear-gradient(270deg, #2D9AFF 0%, #2970F1 100%);
+      background-color: transparent;
+      border: 1px solid #2970f1;
+      border-radius: 4px;
+      font-weight: 400;
+      color: white;
+      font-size: 16px;
+      height: 40px;
+      width: 100%;
+
+      &:hover {
+        background: #2970f1;
+        color: #fff;
+      }
+    }
+    .business_btn {
+      margin-top: 20px;
+    }
+    ul {
+      margin-top: 10px;
+      padding: 0;
+      li {
+        display: flex;
+        padding: 15px 0;
+        img {
+          margin-right: 13px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .secondary_cards {
+    height: 652;
+    max-width: 324px;
+    @media (max-width: 767px) {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+  .business {
+    h4 {
+      margin-top: 10px;
+    }
+  }
+  .premium_card_section {
+    background-color: $text-color-2;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -60px;
+    overflow: hidden;
+    max-width: 324px;
+    height: 797px;
+    @media (max-width: 767px) {
+      height: 100%;
+      max-width: 100%;
+      margin: 30px 0px;
+    }
+
+    h6 {
+      background-color: #2970f1;
+      text-align: center;
+      padding: 20px 0;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+  .premium_card {
+    background: $text-color-2;
+    border: 0;
+    h1 {
+      color: #fff;
+    }
+    h3 {
+      color: #fff;
+      font-weight: 300;
+    }
+    h4 {
+      color: #fff;
+      sup {
+        color: #fff;
+      }
+      sub {
+        color: #fff;
+      }
+    }
+    p {
+      color: #fff;
+    }
+    hr {
+      color: white;
+    }
+    ul {
+      li {
+        color: #fff;
+      }
+    }
+  }
+}

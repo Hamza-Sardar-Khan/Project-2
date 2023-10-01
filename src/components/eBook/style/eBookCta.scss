@@ -1,0 +1,77 @@
+@import "../../../assets/scss/variables.scss";
+
+.ebook-section {
+    width: 100%;
+    background: $text-color-2;
+  
+    .ebook {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      text-align: left;
+      color: white;
+      align-items: center;
+     
+      @media (max-width: 1200px) {
+        max-height: 151.5px;
+      }
+      div {
+        padding: 40px 20px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      h3 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        display: block;
+        span {
+          font-weight: 600;
+          color: $color-2;
+        }
+      }
+      a {
+        display: block;
+        width: 234.2px;
+        background-color: $accent;
+        color: white;
+        border-radius: 4px;
+        padding: 10px 0;
+        margin: 20px 0;
+        text-align: center;
+      }
+      img:first-of-type, img:last-of-type {
+        display: none;
+      }
+      @media (max-width: 768px)  {
+        //max-height: 258px;
+        justify-content: space-between;
+        div {
+          padding: 0;
+        }
+        h3 {
+          font-size: 32px;
+          line-height: 48px;
+        }
+        img:first-of-type, img:last-of-type {
+          display: block;
+        }
+        img:nth-of-type(2) {
+          display: none;
+        }
+      }
+      @media (max-width: 992px)  {
+        text-align: center;
+        div {
+          flex-direction: row;
+          align-items: center;
+        }
+        a {
+          margin: 0 30px;
+        }
+      }
+    }
+  }
+  

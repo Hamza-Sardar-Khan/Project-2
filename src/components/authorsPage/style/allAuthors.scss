@@ -1,0 +1,131 @@
+@import "../../../assets/scss/variables.scss";
+
+.post-authors {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 400;
+  text-align: center;
+  @media (max-width: 393px)  {
+    text-align: left;
+  }
+}
+
+.author-card {
+  border: 0.3px solid $text-color-13;
+  border-radius: 6px;
+  background-color: white;
+  letter-spacing: 0.41px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 0 0 291px; 
+  margin: 0 14px 25px;
+  .card-main {
+    padding: 20px;
+    p:first-of-type {
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin-right: 10px;
+      }
+      .author-name {
+        font-size: 16px;
+        color: $text-color-2;
+        font-weight: 600;
+      }
+    }
+    span {
+      font-size: 13px;
+      border: 1px solid $text-color-2;
+      border-radius: 15.5px;
+      padding: 6px 10px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .author-desc {
+      line-height: 22px;
+      font-size: 13px;
+      font-weight: 300;
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+      height: 154px;
+    }
+  }
+  .card-bottom {
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid $text-color-13;
+    width: 100%;
+    a:first-of-type  {    
+      color: $text-color-2;
+      font-size: 14px;
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+    .read-more {
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 393px)  {
+    align-items: initial;
+    flex: 0 0 403px; 
+    max-width: 403px;
+    .card-main {
+      padding: 30px;
+      p:first-of-type {
+        font-size: 14px;
+      }
+      > div {
+        justify-content: flex-start;
+        h3 {
+          font-size: 22px;
+        }
+      }
+      span {
+        font-size: 14px;
+        width: max-content;
+        display: inline-block;
+      }
+      p:last-of-type {
+        font-size: 15px;
+      }
+    }
+    .card-bottom {
+      flex-direction: row;
+      a {    
+        font-size: 14px;
+      }
+      .read-more {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+

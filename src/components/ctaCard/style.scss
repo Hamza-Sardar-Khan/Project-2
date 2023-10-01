@@ -1,0 +1,79 @@
+@import "../../assets/scss/variables.scss";
+.cta-side-card {
+    border-radius: 6px;
+    max-width: 403px;
+    height: 517px;
+    background: $text-color-2;
+    color: $text-color-1;
+    padding: 24.89px 30.56px 30.42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+   @media (max-width: 393px)  {
+      padding: 26px 30px;
+      min-width: 403px;
+    }
+
+    .input-hero {
+      width: 100%;
+      min-height: 39.28px;
+      margin-bottom: 12.63px;
+  
+      .inputs {
+        width: 100%;
+        border: 1px solid $text-color-1;
+        box-sizing: border-box;
+        border-radius: 4px;
+        color: $text-color-1;
+        background: transparent;
+        padding: 6px 13px;
+        text-decoration: none;
+        outline: none;
+      }
+      ::placeholder {
+        color: $text-color-1;
+        opacity: 1; /* Firefox */
+        text-align: center;
+      }
+    }
+
+    h6 {
+      margin-bottom: 10px;
+      color: white;
+      line-height: 20px;
+      font-size: 30px;
+      font-weight: 300;
+      letter-spacing: 0.57px;
+    }
+    p {
+      color: white;
+      letter-spacing: 0.57px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    img {
+      width: 240px;
+      height: 145px;
+      margin-bottom: 25px;
+    }
+
+    .btn-1 {
+      width: 100%;
+      min-height: 39.29px;
+      margin: 33px 0 12.63px;
+     @media (max-width: 393px)  {
+        width: 270.91px;
+      }
+    }
+    .btn-2 {
+      width: 100%;
+      min-height: 39.29px;
+     @media (max-width: 393px)  {
+        width: 270.91px;
+      }
+    }
+  }

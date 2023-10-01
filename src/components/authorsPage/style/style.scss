@@ -1,0 +1,141 @@
+@import "../../../assets/scss/variables.scss";
+
+.authors-section {
+    background-color: $color-6;
+    width: 100%;
+    margin: 0 auto;
+    .show-results {
+        .read-more {
+            margin: 0;
+        }
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .authors-page {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0 50px 0;
+        @media (max-width: 992px)  {
+            flex-direction: row;
+        }
+        @media (max-width: 1200px)  {
+            padding: 40px 62px 40px;
+        }
+        > div:first-of-type {
+            flex: 0 1 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+            @media (max-width: 992px)  {
+                flex: 0 0 50%;
+                justify-content: flex-end;
+                margin-bottom: 0;
+            }
+            @media all and (min-width: 1400px) {
+                flex: 0 0 33.3934%;
+            } 
+            .author-card {
+                margin-bottom: 0;
+                text-align: center;
+                .read-more {
+                    display: none;
+                }
+            }
+            .about-card {
+                height: 530px;
+                border: 0.3px solid $text-color-13;
+                border-radius: 6px;
+                background-color: white;
+                letter-spacing: 0.41px;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex: 0 0 291px; 
+                margin: 0 14px 0 14px;
+                text-align: center;
+                .card-top {
+                    width: 100%;
+                    padding: 30px 30px 25px;
+                    border-bottom: 0.3px solid $text-color-13;
+                    h1 {
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+                }
+                .card-main {
+                    padding: 25px 30px 30px;
+                    img {
+                        width: 42px;
+                        height: 43px;
+                        border-radius: 100%;
+                        margin-right: 15px;
+                        margin-bottom: 10px;
+                      }
+                    p { 
+                        font-size: 13px;
+                        line-height: 22px;
+                        font-weight: 300;
+                        letter-spacing: 0.45px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            @media (max-width: 992px)  {
+                .author-card, .about-card {
+                    position: sticky;
+                    top: 88px;
+                    margin-bottom: 26px;
+                }
+            }
+        }
+        > div:last-of-type {
+            display: flex;
+            justify-content: center;
+            flex: 0 1 100%;
+            .post-cards {
+                max-height: unset;
+                .post-card {
+                    background-color: white;
+                    margin: 0 14px 28px;
+                }
+            }
+            .post-authors, .post-cards {
+                justify-content: center;
+            }
+            @media (max-width: 992px)  {
+                flex: 0 0 50%;
+                justify-content: flex-start;
+                .post-authors, .post-cards {
+                    justify-content: flex-start;
+                }
+            }
+            @media all and (min-width: 1400px) {
+                flex: 0 0 67.86833%;
+                .post-authors, .post-cards {
+                    justify-content: center;
+                }
+            } 
+        }
+    }
+    @media (max-width:393px) {
+        .authors-page {
+            > div:first-of-type {
+                .about-card {
+                    align-items: initial;
+                    flex: 0 0 403px; 
+                    max-width: 403px;
+                    height: 500px;
+                    text-align: left;
+                }
+                .author-card {
+                    height: 500px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+@import "../../assets/scss/variables.scss";
+// hero-about
+.contact-section {
+  background: $background-6;
+  width: 100%;
+
+  .contact-inner {
+    max-width: 1440px;
+    margin: auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.57px;
+    @media (max-width: 768px)  {
+      padding: 80px 62px;
+    }
+    @media (max-width: 1200px)  {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .contact-about {
+      padding: 10px 0;
+      width: 100%;
+      h2, p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0.57px;
+        margin: 20px 0;
+      }
+      p:last-of-type {
+        display: none;
+      }
+      .gatsby-image-wrapper {
+        display: none;
+      }
+      @media (max-width: 992px)  {
+        padding: 20px 50px 30px 50px;
+        p:last-of-type {
+          display: block;
+        }
+      }
+      @media (max-width: 1200px)  {
+        padding-right: 80px;
+        text-align: left;
+        h2, p {
+          line-height: 26px;
+        }
+        h2 {
+          margin-top: 40px;
+        }
+        h1 {
+          display: none;
+        }
+        .gatsby-image-wrapper  {
+          display: block;
+        }
+      }
+    }
+
+    // form section
+    .form-section {
+      width: 100%;
+      padding: 30px 20px;
+      @media (max-width: 768px)  {
+        max-width: 596px;
+        padding: 50px 69px;
+      }
+
+      h1 {
+        color: $text-color-2;
+        text-align: left;
+        margin-bottom: 30px;
+        display: none;
+        @media (max-width: 1200px)  {
+          display: block;
+          margin-bottom: 27px;
+        }
+      }
+      form {
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 992px)  {
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          label {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 1.19px;
+            margin-bottom: 6px;
+            span {
+              color: red;
+            }
+            @media (max-width: 768px)  {
+              font-size: 16px;
+            }
+          }
+          .input-group {
+            color: $text-color-2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 10px;
+            @media (max-width: 768px)  {
+              flex: 0 1 45%;
+              padding-bottom: 20px;
+            }
+            input {
+              height: 41px;
+            }
+            input,
+            select,
+            textarea {
+              width: 100%;
+              border: 1px solid $text-color-8;
+              border-radius: 4px !important;
+              outline: none;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: 0.574647px;
+              padding: 10px;
+              font-weight: 400;
+              &::placeholder {
+                color: $text-color-8;
+              }
+            }
+            .error {
+              color: red;
+              font-size: 10px;
+              padding-top: 8px;
+              font-weight: 300;
+              @media (max-width: 768px)  {
+                font-size: 13px;
+              }
+            }
+            textarea {
+              line-height: 20px;
+              height: 110px;
+              font-size: 11px;
+             @media (max-width: 992px)  {
+                height: 96px;
+                font-size: 14px;
+              }
+            }
+            .privacy-policy {
+              font-size: 13px;
+              padding: 20px 20px;
+              font-weight: 300;
+            }
+          }
+        }
+        .form-group:last-of-type {
+         @media (max-width: 992px)  {
+            flex-direction: column;
+          }
+        }
+
+        .hr-line {
+          background: $text-color-2;
+          height: 1.5px;
+        }
+        .fom-btn {
+          width: 100%;
+          height: 33.29px;
+          font-weight: 400;
+          font-size: 14px;
+          @media (max-width: 768px)  {
+            height: 47.24px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+@import "../../../assets/scss/variables.scss";
+
+  .post-cards {
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 400;
+    max-height: 490px;
+    text-align: center;
+    .post-card {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      letter-spacing: 0.41px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex: 0 0 291px; 
+      margin: 20px;
+      a:first-of-type {
+        div, img {
+          border-top-left-radius: 6px;
+          border-top-right-radius: 6px;
+          width: 291px;
+          height: 153px;
+        }
+      }
+      .card-info {
+        padding: 30px;
+        border-bottom: 0.5px solid $text-color-13;
+        border-right: 0.5px solid $text-color-13;
+        border-left: 0.5px solid $text-color-13;
+        .card-info-top {
+          a {
+            font-size: 12px;
+            color: $accent;
+            border: 1px solid $accent;
+            border-radius: 15.5px;
+            padding: 6px 10px;
+            margin-right: 0;
+            margin-bottom: 12px;
+            display: block;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+        .card-info-mid {
+          h3 {
+            font-size: 13px;
+            line-height: 20px;
+            color: $text-color-2;
+            margin: 16px 0 12px;
+            font-weight: 600;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+          }
+          p {
+            font-size: 13px;
+            font-weight: 300;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+          }
+        }
+      }
+      .card-info-bottom {
+        padding: 6px 30px 6px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 0.5px solid $text-color-13;
+        border-right: 0.5px solid $text-color-13;
+        border-left: 0.5px solid $text-color-13;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        width: 100%;
+        a {
+          color: $text-color-2;
+        }
+        > div:first-of-type, img {
+          width: 46px;
+          height: 46px;
+          border-radius: 100%;
+          margin-right: 14px;
+        }
+        p:first-of-type {
+          display: block;
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 4px;
+        } 
+        p:last-of-type {
+          font-size: 13px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  @media (max-width: 393px)  {
+    .post-cards {
+      text-align: left;
+      max-height: 545px;
+      .post-card {
+        align-items: initial;
+        flex: 0 0 403px; 
+        max-width: 403px;
+        a:first-of-type {
+          div, img {
+            width:100%;
+            height: auto;
+            aspect-ratio: 403 / 212;
+          }
+        }
+        .card-info  {
+          min-height: 233.33px;
+          .card-info-top {
+            a {
+              margin-right: 14px;
+              font-size: 14px;
+              margin-bottom: 5px;
+              width: max-content;
+              display: inline-block;
+            }
+          }
+          .card-info-mid {
+            h3 {
+              font-size: 18px;
+              letter-spacing: 1.07px;
+              line-height: 26px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+        .card-info-bottom {
+          p:first-of-type {
+            font-size: 15px;
+          } 
+          p:last-of-type {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
